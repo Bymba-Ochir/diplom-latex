@@ -1,90 +1,102 @@
-% Бүлэг 1
+% Бүлэг 3
+\chapter{Системийн хөгжүүлэлт}
+\label{Chapter3}
 
-\chapter{\MakeUppercase{системийн зохиомж}} % Бүлгийн нэр
-\label{Chapter3} % Энэ бүлэг рүү ишлэл хийх бол \ref{Chapter1} командыг ашигла 
-\pagecolor{white}
+\section{Хөгжүүлэлтийн орчин, технологийн сонголт}
+Backend:
+\begin{itemize}
+    \item Node js 
+    \begin{itemize}
+   \item Асинхрон, хурдан (Google V8 engine)
+   \item Нэг process-д олон холболт (Event Loop)
+   \item Real-time систем хөгжүүлэхэд тохиромжтой.
+\end{itemize}
+    \item Express js
+    \begin{itemize}
+   \item REST API бүтээхэд хялбар (GET, POST, PUT, DELETE)
+   \item Routes (URL хаяг) удирдах нь энгийн
+\end{itemize}
+    \item REST API
+    \begin{itemize}
+   \item CRUD үйлдлүүд (Create, Read, Update, Delete) хийхэд тохиромжтой
+   \item JSON формат-аар өгөгдөл дамжуулдаг (хялбар)
+\end{itemize}
+\end{itemize}
+Database:
+\begin{itemize}
+    \item MongodDB  (NoSQL шинжтэй, dynamic schema-тай аппликейшнд тохиромжтой.)
+\end{itemize}
 
-%-------------------------------------------------------------------------------
+ Бусад хэрэгслүүд:
+ \begin{itemize}
+    \item Cloudinary (зураг хадгалах үед)
+    \item Github (frontend хөгжүүлэгчтэй хамтран ажиллахад)
+    \item Insomnia (API туршилтанд)
+\end{itemize}
 
-\section{Дэлгэцийн зохиомж}
+\section{Системийн модуль, бүрэлдэхүүн хэсгүүдийн тайлбар}
+Үнэ санал болгох модуль:
+ Үнэ санал болгох модуль хэрэглэгчид бараанд үнэ санал болгох болон  дуудлага худалдааны үнийн түүх харах боломжийг олгодог бөгөөд Express router болон MongoDB-ийн bidding collection ашиглан хөгжүүлсэн.
+\newline 
+Шинэ дуудлага худалдаа үүсгэх модуль:
+ Шинэ дуудлага худалдаа үүсгэх модуль хэрэглэгчид шинэ бараа нэмэх, барааны мэдээлэл өөрчлөх, устгах боломжийг олгодог бөгөөд Express router болон MongoDB-ийн product collection ашиглан хөгжүүлсэн.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.3]{Figures/pic32.png}
-    \caption{Вэб сайтын нүүр}
-    \label{fig31}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.3]{Figures/pic31.png}
-    \caption{Онцлох сургалтуудын хуудас}
-    \label{fig32}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.3]{Figures/pic33.png}
-    \caption{Сургалтуудын жагсаалтын хуудас}
-    \label{fig33}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.3]{Figures/pic35.png}
-    \caption{Хэрэглэгчдийн сэтгэгдэл үлдээх хуудас}
-    \label{fig34}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.3]{Figures/pic39.png}
-    \caption{Бидэнтэй холбогдох хуудас}
-    \label{fig35}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.3]{Figures/pic310.png}
-    \caption{Нэвтрэх хуудас}
-    \label{fig36}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.3]{Figures/pic34.png}
-    \caption{Шинээр бүртгэл үүсгэх хуудас}
-    \label{fig37}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.3]{Figures/pic36.png}
-    \caption{Админ хуудас}
-    \label{fig38}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.3]{Figures/pic37.png}
-    \caption{Админы онлайн хичээл нэмэх хуудас}
-    \label{fig39}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.3]{Figures/pic38.png}
-    \caption{Админы хичээлд видео нэмэх хуудас}
-    \label{fig310}
-\end{figure}
-\newpage
-\section{Үйл ажиллагааны диаграммууд}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.8]{Figures/pic22.png}
-    \caption{Үйлчлүүлэгчид эрх олгох үйл ажиллагааны диаграм}
-    \label{fig22}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.8]{Figures/pic23.png}
-    \caption{Хичээл нэмэх үйл ажиллагааны диаграм}
-    \label{fig23}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.8]{Figures/pic24.png}
-    \caption{Хичээлийн хуваарь сонгох үйл ажиллагааны диаграм}
-    \label{fig24}
-\end{figure}
+ \section{API болон өгөгдөл солилцоо}
+ Манай системийн үндсэн API Endpoint-ууд:
+  \begin{itemize}
+    \item /api/users
+    \begin{itemize}
+        \item /register
+        \item /login
+        \item /logout
+        \item /allusers
+        \item /userbalance
+        \item /send-code
+        \item /verify-email
+        \item /addBalance
+        \item /forgot-password
+        \item /verify-reset-token/:token
+        \item /reset-password/:token
+         \item /google
+         \item /google/client-id
+         \item /photo
+        
+    \end{itemize}
+    \item /api/product
+    \item /api/bidding
+    \item /api/category
+    \item /api/transaction
+    \item /api/request
+\end{itemize}
+ \section{Аюулгүй байдал ба нэвтрэлт}
+Манай системд хэрэглэгч нэвтрэхдээ Админ болон хэрэглэгч гэж 2 түвшинд хуваагддаг.
+\begin{itemize}
+\item \textbf{Энгийн хэрэглэгч}: Дуудлагад оролцох, бараа байршуулах эрхтэй
+\item \textbf{Админ хэрэглэгч}: Системийн бүх үйл ажиллагааг удирдах эрхтэй
+\end{itemize}
+\newline
+\subsection{Ашиглах технологи}
+\begin{itemize}
+\item \textbf{Express.js middleware}: Хандалтыг шалгах
+\item \textbf{JWT токен}: Хэрэглэгчийн session удирдах
+\item \textbf{MongoDB}: Хэрэглэгчийн мэдээллийг хадгалах
+\end{itemize}
+\subsection{Ажиллах процесс}
+\begin{enumerate}
+\item Хэрэглэгч нэвтрэхдээ токен үүсгэгдэнэ
+\item Хүсэлт бүрд токеныг шалгана
+\item Токен хүчингүй бол хандалтыг хязгаарлана
+\end{enumerate}
+
+\subsection{Алдааны Тохиолдолд}
+
+\begin{itemize}
+\item Токен байхгүй: \texttt{401 Unauthorized}
+\item Админ эрхгүй: \texttt{403 Forbidden}
+\item Буруу токен: \texttt{401 Unauthorized}
+\end{itemize}
+Манай систем нь өгөгдлүүдээ mongoDB дээр хадгалдаг  ба зураг файлыг cloudinary-д байршуулдаг.Нууц үг гэх мэт эмзэг өгөгдлийг bcrypt ашиглаж шифрлэлт хийж хадгалдаг .
+ 
+
+% \section{Бүлгийн дүгнэлт}
+% Зохиомжийн хэсэгт өгөгдлийн ерөнхий схем болон өмнөх шинжилгээний класс диаграм дээр үндэслэн зохиомжийн класс диаграм, дарааллын диаграмуудыг гаргасан. Хамгийн гол төлөвийн диаграмыг бас давхар гаргаж өгсөн байгаа. Бусад ижил төстэй томоохон сайтуудаас жишээ авч вебийн туршилтын загварыг гаргасан байгаа.

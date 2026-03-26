@@ -65,7 +65,6 @@
 \newcommand{\mdtChapapp}{}
 \ifbool{chapteroneline}{%
 	\patchcmd{\@makechapterhead}{%
-		\pagecolor{yellow}
 		\if@mainmatter
 		\huge\bfseries \@chapapp\space \thechapter
 		\par\nobreak
@@ -187,6 +186,7 @@
 \newcommand\myformat{
 \titleformat{\chapter}[display]% команд + хэлбэр
 {%
+\pagecolor{Chapter}
 	\normalfont
 	\Large
 	\filcenter
@@ -212,7 +212,9 @@
 	\thispagestyle{empty}
 	\clearpage
 	\addtocounter{page}{-1}
+\pagecolor{white}
 ]% дараа нь
+
 }
 
 \newcommand\defformat{
@@ -295,14 +297,11 @@ KOMA-script documentation for details.}]{fancyhdr}
 \def\ttitle{}
 \newcommand*{\supervisor}[1]{\def\supname{#1}}
 \newcommand*{\thesistitle}[1]{\def\@title{#1}\def\ttitle{#1}}
-\newcommand*{\thesistitleeng}[1]{\def\@title{#1}\def\ttitleng{#1}}
 \newcommand*{\thesistype}[1]{\def\thesisname{#1}}
 \newcommand*{\reader}[1]{\def\readname{#1}}
-\newcommand*{\advisorA}[1]{\def\advicenameA{#1}}
-\newcommand*{\advisorB}[1]{\def\advicenameB{#1}}
+\newcommand*{\advisor}[1]{\def\advicename{#1}}
 \newcommand*{\degreeind}[1]{\def\degreeid{#1}}
 \newcommand*{\degree}[1]{\def\degreename{#1}}
-\newcommand*{\authorcode}[1]{\def\studentcode{#1}}
 \newcommand*{\authorshort}[1]{\def\shortname{#1}}
 \newcommand*{\authorlong}[1]{\def\longname{#1}}
 \newcommand*{\addresses}[1]{\def\addressname{#1}}
